@@ -1,0 +1,135 @@
+.wave-component {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .component-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .wave-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .wave {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wave-div {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .info-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  
+  .info-text {
+    flex: 0 0 calc(17% - 20px);
+    background-color: #f0fcff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+    letter-spacing: .19rem;
+  }
+  
+  .image {
+    margin-top: -20px;
+  }
+  
+  .image img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (max-width: 480px) {
+    .component-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    .wave-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .wave {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .wave-div {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .info-div {
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 30px;
+    }
+  
+    .info-text {
+      flex: 0 0 calc(33% - 10px);
+      padding: 10px;
+    }
+  
+    .image {
+      margin-top: -10px;
+    }
+  
+    .image img {
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .component-title {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+  
+    .wave-container {
+      gap: 15px;
+    }
+  
+    .wave {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .wave-div {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .info-div {
+      margin-top: 40px;
+    }
+  
+    .info-text {
+      padding: 12px;
+    }
+  
+    .image img {
+      max-width: 40%;
+    }
+  }
+  

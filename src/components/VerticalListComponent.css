@@ -1,0 +1,292 @@
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+  }
+  
+  .verticalImage {
+    position: relative;
+    text-align: center;
+  }
+  
+  .verticalImage img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #eaeaea;
+  }
+  
+  .infoDiv {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 20px;
+    width: 90%;
+  }
+  
+  .infoBlock {
+    background-color: #efefef;
+    text-align: start;
+    padding: 40px;
+    border-radius: 5px;
+  }
+  
+  .infoNumber {
+    width: 88px;
+    height: 88px;
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232b79;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 25px;
+  }
+  
+  .infoTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .infoText {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .infoButton {
+    background-color: transparent;
+    color: #0f0f0f;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .infoButton:hover {
+    color: #5b5b5b;
+    background-color: whitesmoke;
+  }
+  
+  
+  .verticalImage {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image3{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  
+  .verticalImage .img3 {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-align: end;
+  }
+  
+  .verticalImage .info {
+    position: absolute;
+    top: 90%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    width: 30%;
+  }
+  
+  .infoB {
+    background-color: transparent;
+    color: #240d27;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .infoT {
+    font-size: 44px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #8c8c8c 50%, #080808 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorChange 3s linear infinite alternate;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+  
+  .verticalImage .info .infoBut {
+    background-color: #b4b4b4;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .verticalImage .info .infoBut:hover {
+    background-color: #706d6d;
+  }
+  
+  .verticalImage .additionalDiv {
+    position: absolute;
+    top: 60%;
+    left: 33.5%;
+    transform: translateX(-50%);
+  }
+  
+  .verticalImage .additionalDiv .secondImage {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  @media (max-width: 1200px) {
+  .verticalContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .infoDiv {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+  }
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .infoNumber {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+  }
+  .infoTitle {
+    font-size: 19px;
+  }
+  .infoText {
+    font-size: 14px;
+  }
+  .infoButton {
+    padding: 7px 10px;
+  }
+  .verticalImage .img3 {
+    max-width: 100%;
+  }
+  .infoB {
+    font-size: 32px;
+  }
+  .infoT {
+    font-size: 32px;
+  }
+  .info .infoBut {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .verticalContainer{
+    width: 100%;
+  }
+
+  .infoDiv {
+    width: 50%;
+  }
+
+  .verticalImage .info {
+    gap: 20px;
+  }
+  .infoBlock {
+    padding: 30px;
+  }
+  .infoNumber {
+    width: 72px;
+    height: 72px;
+    font-size: 36px;
+  }
+  .infoTitle {
+    font-size: 24px;
+  }
+  .infoText {
+    font-size: 16px;
+  }
+  
+  .infoB {
+    font-size: 24px;
+    padding: 40px;
+  }
+  .infoT {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .verticalImage .additionalDiv {
+    
+    top: 70%;
+  }
+  .verticalImage .additionalDiv .secondImage {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .verticalContainer{
+    width: 100%;
+  }
+
+  .infoDiv{
+    width: 1000%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infoNumber {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+  .infoTitle {
+    font-size: 20px;
+  }
+  .infoText {
+    font-size: 14px;
+  }
+  .infoButton {
+    padding: 5px 10px;
+  }
+  .infoB {
+    font-size: 20px;
+    padding: 30px;
+  }
+  .infoT {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .verticalImage .additionalDiv {
+    top: 80%;
+  }
+  .verticalImage .additionalDiv .secondImage {
+    max-width: 50%;
+  }
+}

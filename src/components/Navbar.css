@@ -1,0 +1,162 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px 90px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.navbar a{
+  background-color: transparent;
+  border: none;
+}
+
+.navbar a:hover{
+  color: #7c7c7c;
+  background-color: transparent;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.burger-menu {
+  font-size: 45px;
+  cursor: pointer;
+  color: #000000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-menu:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  animation: slideInMenu 0.3s ease-in-out forwards;
+}
+
+@keyframes slideInMenu {
+  0% {
+    left: -250px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutMenu {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: -250px;
+    opacity: 0;
+  }
+}
+
+.navbar:not(.open) .menu {
+  animation: slideOutMenu 0.3s ease-in-out forwards;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  transform: rotate(45deg);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.menu li {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.open .menu {
+  left: 0;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 10px 40px;
+  }
+  .logo-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+  }
+  .burger-menu {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .logo-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+  }
+  .burger-menu {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+  .logo-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+  .burger-menu {
+    font-size: 24px;
+  }
+}
